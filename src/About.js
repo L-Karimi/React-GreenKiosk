@@ -26,6 +26,7 @@ const About = () => {
           </p>
 
         </form>
+        <button type="submit" value="Submit">Submit</button>
        
       </div>
     </div>
