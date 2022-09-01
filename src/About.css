@@ -1,5 +1,9 @@
 body{
     display: flex;
+    background-color: yellow;
+}
+form{
+    border: blue 3px solid ;
 }
 .about{
     border-radius: 5px;

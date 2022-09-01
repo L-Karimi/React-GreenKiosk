@@ -1,0 +1,9 @@
+.navBar{
+    display: flex;
+}
+.navBar b{
+    color: #46A0A5;
+}
+.navBar div{
+    margin: 0.2% 0 0 60%;
+}

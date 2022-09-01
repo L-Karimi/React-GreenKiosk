@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from"/Navbar";
-import Footer from "/Footer"
+// import Footer from "/Footer"
 
 import "./About.css"
 
@@ -8,10 +8,11 @@ import "./About.css"
 const About = () => {
   return (
     <div className="about">
-            <Navbar/>
+            { <Navbar/> }
             <h1>Welcome Back</h1>
             <body>
-                <form>
+              <div>
+              <form>
                     <div>
                         <label className="label">Your email</label><br/><input  className="input" type={"email"} placeholder={"name@domain.com"} />
                     </div>
@@ -26,7 +27,9 @@ const About = () => {
                     <div className="or"><hr/><span>Or</span><hr/></div>
 
                 </form>
-                <div className="image"><img src={myImage} alt="login"/></div>
+              </div>
+                
+                {/* <div className="image"><img src={myImage} alt="login"/></div> */}
             </body>
         </div>
   );

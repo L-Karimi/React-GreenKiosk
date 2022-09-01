@@ -6,6 +6,7 @@ const Footer = () => {
             <h1>Contacts</h1>
             <p>Established in 2022</p>
         </div>
+      
     );
 };
-export default Footer
+export default Footer;
