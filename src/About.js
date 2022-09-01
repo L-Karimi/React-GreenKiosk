@@ -1,35 +1,34 @@
 import React from "react";
-import "//About.css"
+import Navbar from"/Navbar";
+import Footer from "/Footer"
+
+import "./About.css"
 
 
 const About = () => {
   return (
-    <div style={{backgroundColor:"yellow"}}>
-      <h1>This is my about page</h1>
-      <p>Our company website is build using React</p>
+    <div className="about">
+            <Navbar/>
+            <h1>Welcome Back</h1>
+            <body>
+                <form>
+                    <div>
+                        <label className="label">Your email</label><br/><input  className="input" type={"email"} placeholder={"name@domain.com"} />
+                    </div>
+                    <div>
+                        <label className="label">Password</label><br/><input className="input" type={"password"} placeholder={"at least 8 characters"} />
+                    </div>
+                    <div>
+                    <input type={"checkbox"}/><label>Keep me logged in</label><span className="forget">Forgot password?</span>
+                    </div>
 
-      <div>
-        <h3>EddieShop</h3>
-        <p>Dont have an account?Sign up</p>
-        <h2>Welcome Back</h2>
-        <form>
+                    <button>Login</button><br/>
+                    <div className="or"><hr/><span>Or</span><hr/></div>
 
-          <label for="email">Your Email</label>
-          <input type="text" id="email" name="email" placeholder="Enter your email"></input>
-          <label for="password">Password</label>
-          <input type="text" id="password" name="password" placeholder="Enter your password"></input>
-          <input type="checkbox" id="checkbox" name="checkbox"   value="logged in"></input>
-
-          <label for="checkbox">Keep me logged in</label>
-
-          <p> Forgot password?</p>
-          <div>
-          </div>
-        </form>
-        <button type="submit" value="Submit">Submit</button>
-       
-      </div>
-    </div>
+                </form>
+                <div className="image"><img src={myImage} alt="login"/></div>
+            </body>
+        </div>
   );
 };
 export default About;
