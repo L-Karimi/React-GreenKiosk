@@ -1,7 +1,4 @@
 import './App.css';
-import './About.css'
-import './Navbar'
-import'./Footer'
 import About from './About';
 
 function App() {
