@@ -1,8 +1,10 @@
 import React from "react";
+import "//About.css"
+
 
 const About = () => {
   return (
-    <div>
+    <div style={{backgroundColor:"yellow"}}>
       <h1>This is my about page</h1>
       <p>Our company website is build using React</p>
 
@@ -20,11 +22,9 @@ const About = () => {
 
           <label for="checkbox">Keep me logged in</label>
 
-
-          <p>
-            Forgot password?
-          </p>
-
+          <p> Forgot password?</p>
+          <div>
+          </div>
         </form>
         <button type="submit" value="Submit">Submit</button>
        
